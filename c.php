@@ -2,9 +2,9 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function1.php";
 // function change(){
-echo "\e[93m<=========DENZ FOOD=========> \n";
+echo "\e[93m    <=========DENZ FOOD=========> \n";
 echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[32m         SCRIFT GOJEK JULI       \n";
+echo "\e[32m           SCRIFT GOJEK JULI       \n";
 echo "\e[93m  ===================================== \n";
 echo "\e[93m   PASTIKAN SUDAH MENGGUNAKAN FAKE GPS     \n";
 echo "\e[96m        [!]GUNAKAN UNTUK MAKAN[!]         \n";
@@ -54,7 +54,7 @@ echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] Your access token : ".$token."\n\n");
-        echo "\n".color("nevy","!] Bissmillah");
+        echo "\n".color("nevy","!] GOFOOD1");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -62,13 +62,13 @@ echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
-        if(strpos($code1, 'alhamdulillah')){
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
         goto gocar;
         }else{
         echo "\n".color("red","+] Message: ".$message);
 	gocar:
-        echo "\n".color("nevy","!] laahaula");
+        echo "\n".color("nevy","!] GOFOOD 2 ");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -76,13 +76,13 @@ echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
-        if(strpos($code1, 'alhamdulillah.')){
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+] Message: ".$message);
         goto gofood;
         }else{
         echo "\n".color("red","+] Message: ".$message);
         gofood:
-        echo "\n".color("nevy","!] alloh hu akbar ");
+        echo "\n".color("nevy","!] GOFOOD3");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -147,3 +147,4 @@ echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 //  }
 
 // echo change()."\n";
+
